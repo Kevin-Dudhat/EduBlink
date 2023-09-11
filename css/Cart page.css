@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-shadow{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+}
+.nav-category{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.nav-category a{
+    color: #181818;
+    font-weight: 500;
+    transition: 0.3s;
+}   
+.nav-category a:hover{
+    color: #1ab69d;
+}
+.category-btn{
+    color: #181818;
+    font-size: 20px;
+    border: none;
+}
+.category-btn:hover{
+    color: #1ab69d;
+}
+.dropdown-txt{
+    border: none !important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+.dropdown-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    width: 270px;
+}
+.dropdown-txt li a:hover{
+    color: #1ab69d!important;
+    background: #fff!important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.drop-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff!important;
+}
+.drop-txt i{
+    transition: 0.3s;
+}
+.drop-txt li a:hover,.drop-txt i:hover{
+    color: #1ab69d;
+}
+.badge2{
+    background-color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.try-btn::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+.try-btn:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+@media screen and (max-width:992px){
+    .h-menu{
+        flex-direction: column;
+       align-items: center!important;
+    }
+    .menu-img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* hero-section */
+
+.hero-breadcrumb li a{
+    color: #181818;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.hero-breadcrumb li a:hover{
+    color: #1ab69d;
+}
+
+/* cart-section */
+
+.cart-table tbody td{
+    vertical-align: middle;
+    padding: 25px 15px;
+}
+.cart-table tbody td a{
+    color: #181818;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.cart-table tbody td a:hover{
+    color: #1ab69d;
+}
+.counter {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+.counter input {
+    width: 70px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #fff;
+    color: #101010;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #848484;
+    user-select: none;
+    transition: 0.3s;
+}
+.counter span:hover{
+    color: #1ab69d;
+}
+.coupon-input{
+    box-shadow: none!important;
+}
+.update-cart-btn{
+    color: #181818;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border:  1px solid #e5e5e5;
+    font-size: 20px;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.update-cart-btn:hover{
+    background-color: #1ab69d;
+    color: #fff;
+}
+.total-table td{
+    vertical-align: middle;
+    padding: 10px 15px;
+}
+.total-table .content{
+    width: 260px!important;
+    text-align: right;
+}
+
+/* footer-secrtion */
+
+.mail:hover{
+    color: #1ab69d!important;
+}
+.call:hover{
+    color: #1ab69d!important;
+}
+.explore-menu li a{
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.explore-menu li a:hover{
+    color: #1ab69d;
+}
+.subscribe-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.subscribe-btn::after{
+    content: '';
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+.subscribe-btn:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}

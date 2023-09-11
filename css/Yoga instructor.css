@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+.header-left p{
+    font-size: 17px;
+    font-weight: 300;
+}
+.header-left a{
+    color: #ee4a62;
+    transition: 0.3s;
+}
+.header-left a:hover{
+    color: #1ab69d;
+}
+.header-right{
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.header-right a:hover{
+    color: #ee4a62;
+}
+.header-right a i{
+    color: #ee4a62;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+.header-social{
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-social li a{
+    transition: 0.3s;
+    font-size: 18px;
+    color: #fff!important;
+    text-decoration: none;
+}
+.header-social li a:hover{
+    color: #ee4a62!important;
+}
+
+/* navbar */
+
+.nav-shadow{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+}
+.nav-category{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.nav-category a{
+    color: #181818;
+    font-weight: 500;
+    transition: 0.3s;
+}   
+.nav-category a:hover{
+    color: #1ab69d;
+}
+.category-btn{
+    color: #181818;
+    font-size: 20px;
+    border: none;
+}
+.category-btn:hover{
+    color: #1ab69d;
+}
+.dropdown-txt{
+    border: none !important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+.dropdown-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    width: 270px;
+}
+.dropdown-txt li a:hover{
+    color: #1ab69d!important;
+    background: #fff!important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.drop-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff!important;
+}
+.drop-txt i{
+    transition: 0.3s;
+}
+.drop-txt li a:hover,.drop-txt i:hover{
+    color: #1ab69d;
+}
+.badge2{
+    background-color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.try-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+@media screen and (max-width:992px){
+    .h-menu{
+        flex-direction: column;
+       align-items: center!important;
+    }
+    .menu-img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* hero-section */
+
+.hero-bg{
+    position: relative;
+}
+.hero-bg::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #f0f4f5;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    -webkit-mask-image: url('../img/yoga-instructor-hero-bg-mask.webp');
+    mask-image: url('../img/yoga-instructor-hero-bg-mask.webp');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+}
+.rotating-img{
+    animation: rotating-img 10s infinite linear;
+}
+@keyframes rotating-img {
+    0% {transform: rotate(359deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* poplar-courses-section */
+
+.course-img{
+    transition: 0.3s;
+}
+.courses-box:hover .course-img{
+    transform: scale(1.1);
+}
+.courses-content a{
+    color: #181818;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.courses-content a:hover{
+    color: #1ab69d;
+}
+
+/* counterup-section */
+
+.counter-box{
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+.counter-box2{
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width:992px){
+    .counter-box2{
+        border: none;
+    }
+}
+@media  screen and (max-width:768px){
+    .counter-box{
+        border: none;
+    }
+}
+
+/* why-choose-section */
+
+.choose-box-icon i{
+    transition: 0.3s;
+}
+.choose-box:hover .choose-box-icon i{
+    color: #fff!important;
+}
+.choose-box-icon{
+    transition: 0.3s;
+}
+.choose-box:hover .choose-box-icon{
+    background-color: #ee4a62!important;
+}
+.choose-box-icon2 span{
+    transition: 0.3s;
+}
+.choose-box2:hover .choose-box-icon2 span{
+    color: #fff!important;
+}
+.choose-box-icon{
+    transition: 0.3s;
+}
+.choose-box2:hover .choose-box-icon2{
+    background-color: #1ab69d!important;
+}
+.choose-box-icon3 span{
+    transition: 0.3s;
+}
+.choose-box3:hover .choose-box-icon3 span{
+    color: #fff!important;
+}
+.choose-box-icon{
+    transition: 0.3s;
+}
+.choose-box3:hover .choose-box-icon3{
+    background-color: #f8941f!important;
+}
+
+/* instructor-section */
+
+.instructor-bg{
+    -webkit-mask-image: url('../img/yoga-instructor-hero-bg-mask.webp');
+    mask-image: url('../img/yoga-instructor-hero-bg-mask.webp');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    background-color: #f0f4f5;
+    padding: 120px 0 390px;
+}
+.instructor-box{
+    position: relative;
+}
+.instructor-social{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 182, 157, 0.6);
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s!important;
+}
+.instructor-social ul li a{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    transition: 0.3s;
+}
+.instructor-social ul li:hover a{
+    color: rgba(26, 182, 157, 0.7);
+    background-color: #FFF;
+}
+.instructor-box:hover .instructor-social{
+    opacity: 1;
+}
+.instructor-content a{
+    text-decoration: none;
+    color: #181818;
+    transition: 0.3s;
+}
+.instructor-content a:hover{
+    color: #1ab69d;
+}
+
+/* video-section */
+
+.distant-course-video{
+    border-radius: 10px;
+}
+.distant-course-video1::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* social-section */
+
+.instagram-box:hover .insta-handal{
+    opacity: 1;
+}
+.instagram-box:hover .insta-img{
+    transform: scale(1.1);
+}
+.insta-handal{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.insta-handal a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.insta-img{
+    transition: 0.3s;
+}
+
+/* footer-secrtion */
+
+.mail:hover{
+    color: #1ab69d!important;
+}
+.call:hover{
+    color: #1ab69d!important;
+}
+.explore-menu li a{
+    text-decoration: none;
+    color: #181818;
+    font-size: 20px;
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.explore-menu li a:hover{
+    color: #1ab69d;
+}
+.subscribe-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    border: none;
+}
+.subscribe-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}

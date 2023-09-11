@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-shadow{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+}
+.nav-category{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.nav-category a{
+    color: #181818;
+    font-weight: 500;
+    transition: 0.3s;
+}   
+.nav-category a:hover{
+    color: #1ab69d;
+}
+.category-btn{
+    color: #181818;
+    font-size: 20px;
+    border: none;
+}
+.category-btn:hover{
+    color: #1ab69d;
+}
+.dropdown-txt{
+    border: none !important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+.dropdown-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    width: 270px;
+}
+.dropdown-txt li a:hover{
+    color: #1ab69d!important;
+    background: #fff!important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.drop-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff!important;
+}
+.drop-txt i{
+    transition: 0.3s;
+}
+.drop-txt li a:hover,.drop-txt i:hover{
+    color: #1ab69d;
+}
+.badge2{
+    background-color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.try-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+@media screen and (max-width:992px){
+    .h-menu{
+        flex-direction: column;
+       align-items: center!important;
+    }
+    .menu-img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* hero-section */
+
+@media screen and (max-width:576px) {
+    .hero-breadcrumb{
+        border: none!important;
+    }
+}
+
+/* event-section */
+
+.book-btn{
+    position: relative;
+    background-color: #1ab69d;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+.book-btn::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    z-index: -1;
+}
+.book-btn:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.countdown{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    color: #808080;
+    padding: 0;
+}
+.countdown li span{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* speakers-section */
+
+.instructor-social{
+    opacity: 0;
+    transition: 0.3s linear;
+}
+.instructor-social li{
+    border: 2px solid #1ab69d;
+    border-radius: 50%;
+    margin: 7px 0px;
+    transition: 0.3s;
+}
+.instructor-social li a{
+    color: #1ab69d;
+    transition: 0.3s;
+}
+.instructor-social li:hover{
+    background-color: #fff!important;
+}
+.instructor-social li a:hover{
+    color: #1ab69d!important;
+}
+.instructor:hover .instructor-social{
+    opacity: 1;
+}
+.instructor:hover .instructor-social li{
+    border: 2px solid #fff!important;
+}
+.instructor:hover .instructor-social li a{
+    color: #fff;
+}
+.instructor:hover .instructor-img{
+    opacity: 1;
+    border-radius: 15px;
+}
+.instructor:hover .share-icon{
+    background-color: #fff;
+    border: 2px solid #fff!important;
+}
+.instructor-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(26, 182, 157, 0.6);
+    border-radius: 15px;
+}
+.instructor-name h3{
+    transition: 0.3s;
+}
+.instructor-name h3:hover{
+    color: #1ab69d;
+}
+
+/* footer-secrtion */
+
+.mail:hover{
+    color: #1ab69d!important;
+}
+.call:hover{
+    color: #1ab69d!important;
+}
+.explore-menu li a{
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.explore-menu li a:hover{
+    color: #1ab69d;
+}
+.subscribe-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.subscribe-btn::after{
+    content: '';
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+.subscribe-btn:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}

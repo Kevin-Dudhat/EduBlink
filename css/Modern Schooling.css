@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-shadow{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+}
+.nav-category{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.nav-category a{
+    color: #181818;
+    font-weight: 500;
+    transition: 0.3s;
+}   
+.nav-category a:hover{
+    color: #1ab69d;
+}
+.category-btn{
+    color: #181818;
+    font-size: 20px;
+    border: none;
+}
+.category-btn:hover{
+    color: #1ab69d;
+}
+.dropdown-txt{
+    border: none !important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+.dropdown-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    width: 270px;
+}
+.dropdown-txt li a:hover{
+    color: #1ab69d!important;
+    background: #fff!important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.drop-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff!important;
+}
+.drop-txt i{
+    transition: 0.3s;
+}
+.drop-txt li a:hover,.drop-txt i:hover{
+    color: #1ab69d;
+}
+.badge2{
+    background-color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.try-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+@media screen and (max-width:992px){
+    .h-menu{
+        flex-direction: column;
+       align-items: center!important;
+    }
+    .menu-img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* hero-section */
+
+.hero-title h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.hero-title h1 span{
+    color: #ee4a62;
+}
+.hero-title p{
+    font-size: 24px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.instructor-box{
+    background-color: #fff;
+    max-width: 250px;
+    border-radius: 6px;
+    padding: 20px;
+    left: 4%;
+    top: 73%;
+}
+.instructor-box h5{
+    font-size: 22px;
+    color: #181818;
+}
+.instructor-box p span{
+    color: #ee4a62;
+    font-weight: 500;
+    font-size: 18px;
+}
+.instructor-box p{
+    color: #181818;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media screen and (max-width:1024px){
+    .hero-title h1 br{
+        display: none;
+    }
+    .hero-title{
+        text-align: center;
+    }
+    .hero-title h1{
+        font-size: 46px;
+        margin-top: 50px;
+    }
+}
+
+/* categories-section */
+
+.online-degree-box{
+    transition: 0.3s;
+}
+.online-degree-box a:hover{
+    color: #1ab69d!important;
+}
+.online-degree-box:hover .online-icon{
+    background-color: #1ab69d!important;
+}
+.online-degree-box:hover .online-icon span{
+    color: #fff!important;
+}
+.art-box{
+    transition: 0.3s;
+}
+.art-box a:hover{
+    color: #ee4a62!important;
+}
+.art-box:hover .online-icon{
+    background-color: #ee4a62!important;
+}
+.art-box:hover .online-icon i{
+    color: #fff!important;
+}
+.develop-box{
+    transition: 0.3s;
+}
+.develop-box a:hover{
+    color: #0ecd73!important;
+}
+.develop-box:hover .online-icon{
+    background-color: #0ecd73!important;
+}
+.develop-box:hover .online-icon i{
+    color: #fff!important;
+}
+.health-box{
+    transition: 0.3s;
+}
+.health-box a:hover{
+    color: #f8941f!important;
+}
+.health-box:hover .online-icon{
+    background-color: #f8941f!important;
+}
+.health-box:hover .online-icon i{
+    color: #fff!important;
+}
+.data-box{
+    transition: 0.3s;
+}
+.data-box a:hover{
+    color: #8e56ff!important;
+}
+.data-box:hover .online-icon{
+    background-color: #8e56ff!important;
+}
+.data-box:hover .online-icon i{
+    color: #fff!important;
+}
+.marketing-box{
+    transition: 0.3s;
+}
+.marketing-box a:hover{
+    color: #f92596!important;
+}
+.marketing-box:hover .online-icon{
+    background-color: #f92596!important;
+}
+.marketing-box:hover .online-icon i{
+    color: #fff!important;
+}
+.computer-box{
+    transition: 0.3s;
+}
+.computer-box a:hover{
+    color: #f8941f!important;
+}
+.computer-box:hover .online-icon{
+    background-color: #f8941f!important;
+}
+.computer-box:hover .online-icon i{
+    color: #fff!important;
+}
+.photography-box{
+    transition: 0.3s;
+}
+.photography-box a:hover{
+    color: #39c0fa!important;
+}
+.photography-box:hover .online-icon{
+    background-color: #39c0fa!important;
+}
+.photography-box:hover .online-icon i{
+    color: #fff!important;
+}
+.music-box{
+    transition: 0.3s;
+}
+.music-box a:hover{
+    color: #5866eb!important;
+}
+.music-box:hover .online-icon{
+    background-color: #5866eb!important;
+}
+.music-box:hover .online-icon span{
+    color: #fff!important;
+}
+
+/* popular-courses */
+
+.course-modal{
+    transition: 0.3s;
+}
+.course-box{
+    transition: 0.3s;
+}
+.course-box:hover img{
+    scale: 1.1;
+}
+.course-box:hover{
+    background-color: #1ab69d!important;
+    color: #fff!important;
+}
+.course-box:hover .content span,.course-box:hover .content ul li i{
+    color: #fff!important;
+}
+.browse-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    line-height: 62px;
+    padding: 0 30px;
+}
+.browse-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+
+/* faqs-section */
+
+.accordion-button:not(.collapsed){
+    background-color: #1ab69d!important;
+    color: #fff!important;
+}
+
+/* counterup-section */
+
+.counter-box{
+    border-right: 2px solid #eee;
+}
+.counter-box2{
+    border-right: 2px solid #eee;
+}
+@media screen and (max-width:992px){
+    .counter-box2{
+        border: none;
+    }
+}
+@media  screen and (max-width:768px){
+    .counter-box{
+        border: none;
+    }
+}
+
+/* testimonial-section */
+
+.testimonial-bg{
+    position: relative;
+}
+.testimonial-bg::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    background-image: url(../img/modern-schooling-testimonial-bg.svg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+/* cta-section */
+
+.started-btn{
+    color: #fff;
+    background-color: #ee4a62;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    line-height: 62px;
+    padding: 0 30px;
+    transition: 0.3s;
+}
+.started-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* latest-artical-section */
+
+.blog{
+    max-width: 270px;
+}
+img{
+    transition: 0.3s;
+}
+.blog:hover .blog-img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.blog:hover .read-more-btn{
+    opacity: 1;
+}
+.read-more-btn{
+    background-color: #1ab69d;
+    color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
+}
+.read-more-btn:hover{
+    background-color: #ee4a62;
+    color: #fff;
+}
+.blog-content a{
+    transition: 0.3s;
+}
+.blog-content a:hover{
+    color: #1ab69d!important;
+}
+.blog-content h5{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.blog-content h5:hover{
+    color: #1ab69d;
+}
+
+/* footer-secrtion */
+
+.mail:hover{
+    color: #1ab69d!important;
+}
+.call:hover{
+    color: #1ab69d!important;
+}
+.explore-menu li a{
+    text-decoration: none;
+    color: #181818;
+    font-size: 20px;
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.explore-menu li a:hover{
+    color: #1ab69d;
+}
+.subscribe-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    border: none;
+}
+.subscribe-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}

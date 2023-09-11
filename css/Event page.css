@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-shadow{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+}
+.nav-category{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.nav-category a{
+    color: #181818;
+    font-weight: 500;
+    transition: 0.3s;
+}   
+.nav-category a:hover{
+    color: #1ab69d;
+}
+.category-btn{
+    color: #181818;
+    font-size: 20px;
+    border: none;
+}
+.category-btn:hover{
+    color: #1ab69d;
+}
+.dropdown-txt{
+    border: none !important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+.dropdown-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    width: 270px;
+}
+.dropdown-txt li a:hover{
+    color: #1ab69d!important;
+    background: #fff!important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.drop-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff!important;
+}
+.drop-txt i{
+    transition: 0.3s;
+}
+.drop-txt li a:hover,.drop-txt i:hover{
+    color: #1ab69d;
+}
+.badge2{
+    background-color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.try-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+@media screen and (max-width:992px){
+    .h-menu{
+        flex-direction: column;
+       align-items: center!important;
+    }
+    .menu-img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* hero-section */
+
+.hero-breadcrumb li a{
+    color: #181818;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.hero-breadcrumb li a:hover{
+    color: #1ab69d;
+}
+
+/* event-section */
+
+.event-box{
+    transition: 0.3s;
+}
+.event-img{
+    transition: 0.3s;
+}
+.event-box:hover .event-img{
+    scale: 1.1;
+}
+.event-content{
+    transition: 0.3s;
+    position: absolute;
+}
+.event-box:hover .event-img{
+    margin-bottom: -75px;
+}
+.event-box:hover .event-content{
+    background-color: #fff!important;
+    border-bottom: 4px solid rgba(255, 91, 92, 0.3)!important;
+}
+.event-box:hover .learn-btn{
+   opacity: 1;
+}
+.event-content a{
+    text-decoration: none;
+    color: #181818;
+    transition: 0.3s;
+}
+.event-content a:hover{
+    color: #1ab69d;
+}
+.learn-btn{
+    background-color: #ee4a62;
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    position: relative;
+    opacity: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+.learn-btn::after{
+    content: '';
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+.learn-btn:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.event-pagination li a{
+    font-size: 20px!important;
+    font-weight: 600!important;
+    color: #181818;
+    border: none!important;
+    border-radius: 50%!important;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.event-pagination li a:hover{
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    color: #fff;
+}
+.pagination-active a{
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    color: #fff!important;
+}
+
+/* footer-secrtion */
+
+.mail:hover{
+    color: #1ab69d!important;
+}
+.call:hover{
+    color: #1ab69d!important;
+}
+.explore-menu li a{
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.explore-menu li a:hover{
+    color: #1ab69d;
+}
+.subscribe-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.subscribe-btn::after{
+    content: '';
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+.subscribe-btn:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}

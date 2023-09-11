@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-shadow{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+}
+.nav-category{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.nav-category a{
+    color: #181818;
+    font-weight: 500;
+    transition: 0.3s;
+}   
+.nav-category a:hover{
+    color: #1ab69d;
+}
+.category-btn{
+    color: #181818;
+    font-size: 20px;
+    border: none;
+}
+.category-btn:hover{
+    color: #1ab69d;
+}
+.dropdown-txt{
+    border: none !important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+.dropdown-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    width: 270px;
+}
+.dropdown-txt li a:hover{
+    color: #1ab69d!important;
+    background: #fff!important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.drop-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff!important;
+}
+.drop-txt i{
+    transition: 0.3s;
+}
+.drop-txt li a:hover,.drop-txt i:hover{
+    color: #1ab69d;
+}
+.badge2{
+    background-color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.try-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+@media screen and (max-width:992px){
+    .h-menu{
+        flex-direction: column;
+       align-items: center!important;
+    }
+    .menu-img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+.rotating-img{
+    animation: rotating-img 10s linear infinite;
+}
+@keyframes rotating-img {
+    0%{transform: rotate(359deg);}
+    100%{transform: rotate(0deg);}
+}
+
+/* featured-section */
+
+.feature-icon1{
+    background-color: rgba(26, 182, 157, 0.1);
+    box-shadow: 0px 20px 70px 0px rgba(15, 107, 92, 0.2);
+}
+.feature-box:hover .feature-icon1{
+    background-color: #1ab69d;
+    transition: 0.3s;
+}
+.feature-box:hover .featured-img01{
+    -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(18%) saturate(498%) hue-rotate(41deg) brightness(119%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(99%) sepia(18%) saturate(498%) hue-rotate(41deg) brightness(119%) contrast(100%);
+}
+.featured-img01{
+    -webkit-filter: brightness(0) saturate(100%) invert(53%) sepia(56%) saturate(571%) hue-rotate(121deg) brightness(99%) contrast(92%);
+    filter: brightness(0) saturate(100%) invert(53%) sepia(56%) saturate(571%) hue-rotate(121deg) brightness(99%) contrast(92%);
+}
+.feature-icon2{
+    background-color: rgba(238, 74, 98, 0.1);
+    box-shadow: 0px 20px 70px 0px rgba(176, 57, 75, 0.2);
+}
+.feature-box:hover .feature-icon2{
+    background-color: #ee4a62;
+    transition: 0.3s;
+}
+.feature-box:hover .featured-img02{
+    -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(18%) saturate(498%) hue-rotate(41deg) brightness(119%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(99%) sepia(18%) saturate(498%) hue-rotate(41deg) brightness(119%) contrast(100%);
+}
+.featured-img02{
+    -webkit-filter: brightness(0) saturate(100%) invert(47%) sepia(93%) saturate(3371%) hue-rotate(324deg) brightness(96%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(47%) sepia(93%) saturate(3371%) hue-rotate(324deg) brightness(96%) contrast(93%);
+}
+.feature-icon3{
+    background-color: #e7f7fe;
+    box-shadow: 0px 20px 70px 0px rgba(27, 89, 116, 0.2);
+}
+.feature-box:hover .feature-icon3{
+    background-color: #39c0fa;
+    transition: 0.3s;
+}
+.feature-box:hover .featured-img03{
+    -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(18%) saturate(498%) hue-rotate(41deg) brightness(119%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(99%) sepia(18%) saturate(498%) hue-rotate(41deg) brightness(119%) contrast(100%);
+}
+.featured-img03{
+    -webkit-filter: brightness(0) saturate(100%) invert(67%) sepia(25%) saturate(4311%) hue-rotate(170deg) brightness(104%) contrast(96%);
+    filter: brightness(0) saturate(100%) invert(67%) sepia(25%) saturate(4311%) hue-rotate(170deg) brightness(104%) contrast(96%);
+}
+
+/* about-us-section */
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .about-top{
+        margin-top: 150px;
+    }
+}
+
+/* activities-section */
+
+.guid-bg{
+    position: relative;
+}
+.guid-bg::before{
+    content: '';
+    inset: 0;
+    position: absolute;
+    background: url('../img/health-coach-guid-bg.webp') no-repeat center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.guid-box{
+    transition: 0.3s;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 10px 50px 0px rgba(26,46,85,0.1);
+    border-radius: 5px;
+}
+.guid-box:hover .online-icon span{
+    color: #fff!important;
+}
+.online-icon{
+    border-radius: 50%;
+    padding: 20px;
+}
+.camp:hover .online-icon{
+    background-color: #1ab69d!important;
+}
+.mask:hover .online-icon{
+    background-color: #ee4a62!important;
+}
+.sport:hover .online-icon{
+    background-color: #8e56ff!important;
+}
+.music:hover .online-icon{
+    background-color: #f92596!important;
+}
+.function:hover .online-icon{
+    background-color: #5866eb!important;
+}
+.soap:hover .online-icon{
+    background-color: #f8941f!important;
+}
+
+/* popular-courses-section */
+
+.browse-btn{
+    color: #1ab69d;
+    background-color: #f0f4f5;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    line-height: 62px;
+    padding: 0 30px;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: 1;
+}
+.browse-btn:after{
+    content: '';
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+.browse-btn:hover{
+    color: #fff;
+}
+.browse-btn:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.course-modal{
+    transition: 0.3s;
+}
+.item:hover .course-modal{
+    transform: scale(1.1);
+}
+.course-content a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+.course-content a:hover{
+    color: #1ab69d;
+}
+.read-more-btn{
+    background-color: #fff; 
+    top: 44%; 
+    right: 10%;
+    transition: 0.3s;
+}
+.read-more-btn a{
+    color: #1ab69d;
+    transition: 0.3s;
+}
+.read-more-btn:hover a{
+    color: #fff;
+}
+.read-more-btn:hover{
+    background-color: #1ab69d;
+}
+
+/* testimonial-section */
+
+@media screen and (max-width:991px){
+    .testimonial-title{
+        margin-right: 0px!important;
+    }
+    .testimonial-content{
+        margin-top: 20px!important;
+    }
+}
+.testimonial-content{
+    margin-top: 170px;
+}
+
+/* event&news-section */
+
+.event-box{
+    transition: 0.3s;
+}
+.event-img{
+    transition: 0.3s;
+}
+.event-box:hover .event-img{
+    scale: 1.1;
+}
+.event-content{
+    transition: 0.3s;
+    position: absolute;
+}
+.event-box:hover .event-img{
+    margin-bottom: -35px;
+}
+.event-box:hover .learn-btn{
+   opacity: 1;
+}
+.event-content a{
+    text-decoration: none;
+    color: #181818;
+    transition: 0.3s;
+}
+.event-content a:hover{
+    color: #1ab69d;
+}
+.learn-btn{
+    background-color: #1ab69d;
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    opacity: 0;
+    margin-top: 10px;
+}
+.learn-btn:hover{
+    color: #fff;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+@keyframes round-animation{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+.view-all-btn{
+    text-decoration: none;
+    color: #1ab69d;
+    transition: 0.3s;
+}
+.view-all-btn:hover{
+    text-decoration: underline;
+}
+
+/* cta-section */
+
+.cta-bg{
+    background: url('../img/health-coach-cta-bg.webp') no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.cta-input{
+    width: 35%;
+}
+@media screen and (max-width:992px) {
+    .cta-input{
+        width: 60%;
+    }
+}
+
+/* footer-secrtion */
+
+.mail:hover{
+    color: #1ab69d!important;
+}
+.call:hover{
+    color: #1ab69d!important;
+}
+.explore-menu li a{
+    text-decoration: none;
+    color: #181818;
+    font-size: 20px;
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.explore-menu li a:hover{
+    color: #1ab69d;
+}
+.subscribe-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    border: none;
+}
+.subscribe-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}

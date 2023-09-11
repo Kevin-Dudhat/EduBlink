@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.try-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+/* hero-section */
+
+.hero-bg{
+    position: relative;
+}
+.hero-bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing-demo-hero-bg.png');
+    z-index: -1;
+}
+.hero-content{
+    min-height: 860px;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+@media screen and (max-width: 1664px){
+    .banner{
+        width: 70%;
+    }
+    .banner4{
+        text-align: end;
+        top: 60%!important;
+    }
+    .banner3{
+        text-align: end;
+    }
+    .banner2{
+        top: 60%!important;
+    }
+}
+@media screen and (max-width: 1024px){
+    .banner{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:1024px){
+    .hero-content{
+        min-height: 600px;
+        margin-top: 0;
+        display: block;
+    }
+}
+@media screen and (max-width:576px){
+    .hero-content{
+        min-height: 550px;
+        margin-top: 0;
+        display: block;
+    }
+}
+
+/* counter-up-section */
+
+.counterup-content{
+    border-right: 1px solid #e5e5e5;
+}
+@media screen and (max-width:767px) {
+    .counterup-content{
+        border: none;
+    }
+}
+
+/* demo-section */
+
+.demo-box{
+    transition: 0.3s;
+}
+.demo-box:hover{
+    transform: translateY(-10px);
+}
+.demo-box:hover .demo-img::before, .demo-box:hover .demo-btn{
+    opacity: 1;
+}
+.demo-title a{
+    text-decoration: none;
+    color: #181818;
+    transition: 0.3s;
+}
+.demo-title a:hover{
+    color: #1ab69d;
+}
+.demo-img{
+    position: relative;
+}
+.demo-img::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.demo-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+.demo-badge{
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    background-color: #f8b81f;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0px 10px 30px 0px rgba(179, 109, 28, 0.4);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* course-detail-section */
+
+.course-detail-bg{
+    position: relative;
+    padding: 50px 0px;
+}
+.course-detail-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/landing-demo-preview-course-bg.jpg');
+    z-index: -1;
+}
+.rotating-img{
+    animation: rotating-img 9s linear infinite;
+}
+@keyframes rotating-img{
+    0%{transform: rotate(359deg);}
+    100%{transform: rotate(0deg)}
+}
+
+/* layout-section */
+
+.slider-img{
+    animation: slider-img 100s linear infinite;
+    background: url('../img/landing-demo-courses-slide.webp');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+@keyframes slider-img{
+    0%{background-position: 0px;}
+    100%{background-position: -10000px;}
+}
+
+/* shop-section */
+
+.shop-bg{
+    position: relative;
+    padding: 50px 0px;
+}
+.shop-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/lading-demo-shop-bg.jpg');
+    z-index: -1;
+}
+
+/* template-section */
+
+.features-icon{
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 0px 15px 60px 0 rgba(0, 0, 0, 0.1);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* inner-page-section */
+
+.inner-page-bg::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing-demo-inner-page-bg.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.inner-page-img{
+    animation: slider-img 100s linear infinite;
+    background: url('../img/landing-demo-inner-page.webp');
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+@keyframes slider-img{
+    0%{background-position: 0px;}
+    100%{background-position: -10000px;}
+}
+
+/* cta-section */
+
+.cta-bg{
+    position: relative;
+    padding: 100px 0px;
+}
+.cta-bg::before{
+    content: '';
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../img/landing-demo-cta-bg.png');
+    background-size: cover;
+    z-index: -1;
+}
+.browse-btn{
+    color: #000;
+    background-color: #f0f4f5;
+    overflow: hidden;
+    position: relative;
+    font-weight: 500;
+}
+.browse-btn:hover{
+    color: #fff;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.browse-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f4f5;
+    transition: all 1s ease;
+}
+.browse-btn:hover::before {
+    animation: slideAnimation 0.3s forwards;
+}
+@keyframes slideAnimation {
+    0% {
+      left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.rotating-img{
+    animation: rotating-img 12s linear infinite;
+}
+@keyframes rotating-img {
+    0%{transform: rotate(359deg);}
+    100%{transform: rotate(0deg);}
+}

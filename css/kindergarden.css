@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-bg{
+    position: relative;
+}
+.nav-bg::before{
+    content: url('../img/shape-63.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-bg::after{
+    content: url('../img/shape-64.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+@media screen and (max-width:1400px){
+    .nav-bg{
+        display: none;
+    }
+}
+.nav-shadow{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+}
+.nav-category{
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.nav-category a{
+    color: #181818;
+    font-weight: 500;
+    transition: 0.3s;
+}   
+.nav-category a:hover{
+    color: #1ab69d;
+}
+.dropdown-txt{
+    border: none !important;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+}
+.dropdown-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    width: 270px;
+}
+.dropdown-txt li a:hover{
+    color: #1ab69d!important;
+    background: #fff!important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.mainmenu li a{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mainmenu li a:hover{
+    color: #1ab69d;
+}
+.drop-txt li a{
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff!important;
+}
+.drop-txt i{
+    transition: 0.3s;
+}
+.drop-txt li a:hover,.drop-txt i:hover{
+    color: #1ab69d;
+}
+.badge2{
+    background-color: #1ab69d;
+}
+.try-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 30px 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.try-btn:hover{
+    border-radius: 5px 30px;
+    color: #fff;
+    background-color: #1ab69d;
+    background-image: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.modal-backdrop.show{
+    z-index: -1!important;
+}
+
+@media screen and (max-width:992px){
+    .h-menu{
+        flex-direction: column;
+       align-items: center!important;
+    }
+    .menu-img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* hero-section */
+
+.hero-bg{
+    min-height: 820px;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    background: -webkit-linear-gradient(right, rgba(49, 185, 120, 0.2) 0%, rgba(26, 182, 157, 0.2) 100%);
+    background: linear-gradient(-90deg, rgba(49, 185, 120, 0.2) 0%, rgba(26, 182, 157, 0.2) 100%);
+    overflow: hidden;
+}
+.hero-bg::after{
+    content: url('../img/shape-62.png');
+    position: absolute;
+    top: 87%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+@media screen and (min-width:576px) and (max-width:768px){
+    .kid-img{
+        width: 20%!important;
+    }
+    .kid-img2{
+        top: 30%!important;
+        right: 5%!important;
+    }
+    .hero-features{
+        margin-top: 150px!important;
+    }
+}
+.rotating-img{
+    animation: rotating-img 10s linear infinite;
+}
+@keyframes rotating-img{
+    0%{transform: rotate(359deg);}
+    100%{transform: rotate(0deg);}
+}
+.bounce-img{
+    animation: bounce-slide 2s infinite ease;
+}
+@keyframes bounce-slide {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1,1)   translateY(0); }
+    30%  { transform: scale(1,1)   translateY(-30px); }
+    50%  { transform: scale(1,1)  translateY(0); }
+    57%  { transform: scale(1,1)      translateY(0); }
+    64%  { transform: scale(1,1)      translateY(-7px); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .about-top{
+        margin-top: 150px;
+    }
+}
+
+/* popular-courses-section */
+
+.courses-bg{
+    position: relative;
+}
+.courses-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/kindergardern-course-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.course-content{
+    -webkit-mask-image: url('../img/kindergardern-course-content-bg.png');
+    mask-image: url('../img/kindergardern-course-content-bg.png');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    border-radius: 0 0 10px 10px;
+}
+.course-modal{
+    transition: 0.3s;
+}
+.item:hover .course-modal{
+    transform: scale(1.1);
+}
+.course-content a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* activities-section */
+
+.activities-box{
+    transition: 0.3s;
+}
+.online-icon{
+    position: relative;
+}
+.online-icon{
+    -webkit-mask-image: url('../img/kinder-garden-activities-mask.png');
+    mask-image: url('../img/kinder-garden-activities-mask.png');
+    height: 83px;
+    width: 109px;
+    padding: 40px!important;
+    border-radius: 0!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activities-box:hover .online-icon span{
+    color: #fff!important;
+}
+.camp:hover .online-icon{
+    background-color: #1ab69d!important;
+}
+.mask:hover .online-icon{
+    background-color: #ee4a62!important;
+}
+.sport:hover .online-icon{
+    background-color: #8e56ff!important;
+}
+.music:hover .online-icon{
+    background-color: #f92596!important;
+}
+.function:hover .online-icon{
+    background-color: #5866eb!important;
+}
+.soap:hover .online-icon{
+    background-color: #f8941f!important;
+}
+
+/* education-for-everyone-section */
+
+.accordion-button-1{
+    background-color: #8e56ff!important;
+    color: #fff;
+}
+.accordion-button-1:not(.collapsed){
+    background-color: #8e56ff!important;
+    color: #fff!important;
+}
+.accordion-button-2{
+    background-color: #f8941f!important;
+    color: #fff;
+}
+.accordion-button-2:not(.collapsed){
+    background-color: #f8941f;
+    color: #fff;
+}
+.accordion-button-3{
+    background-color: #1ab69d!important;
+    color: #fff;
+}
+.accordion-button-3:not(.collapsed){
+    background-color: #1ab69d;
+    color: #fff;
+}
+.faq-img{
+    -webkit-mask-image: url('../img/kindergarden-faq-mask.png');
+    mask-image: url('../img/kindergarden-faq-mask.png');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+}
+
+/* event-section */
+
+.event-bg{
+    position: relative;
+}
+.event-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/kindergarden-event-bg.svg');
+    background-size: cover;
+    z-index: -1;
+}
+.event-modal{
+    transition: 0.3s;
+}
+.event-box{
+    transition: 0.3s;
+}
+.event-box:hover img{
+    scale: 1.1;
+}
+.event-box:hover .event span,.event-box:hover .content ul li span,.event-box:hover .content p,.event-box:hover .content ul li i{
+    color: #fff!important;
+    transition: 0.3s;
+}
+.event-box:hover .event-btn-1,.event-box:hover .event-btn-2,.event-box:hover .event-btn-3,.event-box:hover .event-btn-4{
+    background-color: #fff!important;
+    color: #181818;
+}
+.event-1:hover{
+    background-color: #8e56ff!important;
+    color: #fff!important;
+}
+.event-btn-1{
+    background-color: #8e56ff;
+    transition: 0.3s;
+}
+.event-2:hover{
+    background-color: #ee4a62!important;
+    color: #fff!important;
+}
+.event-btn-2{
+    background-color: #ee4a62;
+    transition: 0.3s;
+}
+.event-3:hover{
+    background-color: #f8941f!important;
+    color: #fff!important;
+}
+.event-btn-3{
+    background-color: #f8941f;
+    transition: 0.3s;
+}
+.event-4:hover{
+    background-color: #1ab69d!important;
+    color: #fff!important;
+}
+.event-btn-4{
+    background-color: #1ab69d;
+    transition: 0.3s;
+}
+.browse-btn{
+    color: #fff;
+    border-radius: 30px 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.browse-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background-image: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.event-kid{
+    display: block;
+    -webkit-mask-image: url('../img/kindergarden-event-mask.png');
+    mask-image: url('../img/kindergarden-event-mask.png');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+}
+
+/* latest-artical-section */
+
+.blog-img{
+    transition: 0.3s;
+}
+.blog:hover .blog-img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.blog:hover .read-more-btn{
+    opacity: 1;
+}
+.read-more-btn{
+    background-color: #1ab69d;
+    color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
+}
+.read-more-btn:hover{
+    background-color: #ee4a62;
+    color: #fff;
+}
+.blog-content a{
+    transition: 0.3s;
+}
+.blog-content a:hover{
+    color: #1ab69d!important;
+}
+.blog-content h5{
+    transition: 0.3s;
+}
+.blog-content h5:hover{
+    color: #1ab69d;
+}
+.artical-content{
+    position: relative;
+}
+.artical-content::before{
+    content: url('../img/shape-73.png');
+    position: absolute;
+    overflow: hidden;
+    top: -30px;
+    left: 0;
+    right: 0;
+}
+
+/* cta-section */
+
+.cta-bg{
+    position: relative;
+    padding: 220px 0 130px;
+}
+.cta-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/kindergarden-cta-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: brightness(0) saturate(100%) invert(93%) sepia(4%) saturate(983%) hue-rotate(324deg) brightness(104%) contrast(94%);
+    filter: brightness(0) saturate(100%) invert(93%) sepia(4%) saturate(983%) hue-rotate(324deg) brightness(104%) contrast(94%);
+    z-index: -1;
+}
+.cta-input{
+    width: 40%;
+}
+@media screen and (max-width:1650px) {
+    .cta-kid01{
+        width: 50%!important;
+    }
+    .cta-kid02{
+        width: 50%!important;
+    }
+}
+@media screen and (max-width:992px) {
+    .cta-input{
+        width: 60%;
+    }
+}
+@media screen and (max-width:767px){
+    .cta-input{
+        width: 100%;
+    }
+    .cta-bg{
+        padding: 150px 0px 60px;
+    }
+}
+
+/* footer-secrtion */
+
+.mail:hover{
+    color: #1ab69d!important;
+}
+.call:hover{
+    color: #1ab69d!important;
+}
+.explore-menu li a{
+    text-decoration: none;
+    color: #bababa;
+    font-size: 20px;
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.explore-menu li a:hover{
+    color: #1ab69d;
+}
+.subscribe-btn{
+    color: #fff;
+    background-color: #1ab69d;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    border: none;
+}
+.subscribe-btn:hover{
+    color: #fff;
+    background-color: #1ab69d;
+    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+.footer-bg{
+    position: relative;
+    z-index: 1;
+}
+.footer-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/kindergarden-footer-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
