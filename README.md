@@ -1,4 +1,4 @@
 # Edublink
-Clone of EduBlink
-Created in Html, css and Bootstrap
-Author - Kevon Dudhat
+Clone of EduBlink <br>
+Created in Html, css and Bootstrap <br>
+Author - Kevin Dudhat
